@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+:root
+{
+    --VermelhoOff: #F40000;
+    --Amarelo_Sunglow: #FFD046;
+    --VioletaRussa:#261447;
+    --AzulCarolina: #86bbd8;
+    --Menta: #61c9a8;
+    --preto: #000000;
+    --branco: #ffffff;
+}
+p 
+{
+    background-color: #86bbd8;
+}
+/*inline*/
+h1
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+*
+{
+    background-color:#FFD046;
+}
+li
+{
+    font-size: 25px;
+}

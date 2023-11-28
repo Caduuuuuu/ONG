@@ -12,7 +12,7 @@
 }
 p 
 {
-    background-color: #86bbd8;
+    background-color: #ffd046;
 }
 /*inline*/
 h1
@@ -28,4 +28,34 @@ h1
 li
 {
     font-size: 25px;
+}
+    div{
+        width:60%; 
+        margin:auto;
+        height:12px;
+  }
+  a{
+    color:#ff0000;
+  }
+/* Style for anchor links */
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Hover effect for anchor links */
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Visited link style for anchor links */
+a:visited {
+    color: #ff0000;
+}
+
+/* Active link style for anchor links */
+a:active {
+    color: #000000;
+    text-decoration: underline;
 }

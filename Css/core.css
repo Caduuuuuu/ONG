@@ -3,10 +3,10 @@
 :root
 {
     --VermelhoOff: #F40000;
-    --Amarelo_Sunglow: #FFD046;
+    --coffee: #7A4D2F;
     --VioletaRussa:#261447;
-    --AzulCarolina: #86bbd8;
-    --Menta: #61c9a8;
+    --vanilla: #F2F09E;
+    --lion: #B2906A;
     --preto: #000000;
     --branco: #ffffff;
 }
@@ -20,6 +20,28 @@ h1
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
 }
+h2{
+
+    color: #2D1B1C;
+    background-color: #B2906A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+ }
+ 
+  h3{
+    
+    color:#2D1B1C;
+    background-color: #B2906A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }   
+ 
+ 
+ h4{
+ 
+    color:#2D1B1C;
+    background-color: #B2906A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
 
 *
 {

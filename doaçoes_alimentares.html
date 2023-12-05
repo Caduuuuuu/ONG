@@ -1,66 +1,124 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faleconosco</title></head>
-<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
-<link rel="stylesheet" href="Css/core.css" type="">
+    <title>Formulário de Doação</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="Css/core.css" type="">
+    <body>
+        <nav>
+            <ul type="disc">
+                        <li><a style="color: #F40000" href="index.html">Homepage</a></li>
+                        <li>Sites</li>
+                        <ul type="circle">
+                        <li><a style="color: #F40000" href="Tempo.html">Sobre nós</a></li>
+                        <li><a style="color: #F40000" href="Projetos.html">Voltar</a></li>
+                        <li><a style="color: #F40000" href="imagens.html">Registro de imagens</a></li>
+                        <li><a style="color: #F40000" href="Video.html">Videos</a></li>
+                        <li><a style="color: #F40000" href="doaçoes_alimentares.html">Doações</a></li>
+                        </ul>
+            </ul>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            background-color: #4CAF50;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
 <body>
-    <nav>
-        <ul type="disc">
-                    <li><a href="Organização_não-governamental.html">Homepage</a></li>
-                    <li>Sites</li>
-                    <ul type="circle">
-                    <li><a href="Tempo.html">Sobre nós</a></li>
-                    <li><a href="Projetos.html">Voltar</a></li>
-                    <li><a href="imagens.html">Registro de imagens</a></li>
-                    <li><a href="Video.html">Videos</a></li>
-                    <li><a href="doaçoes_alimentares.html">Doações</a></li>
-                    <li><a href="https://teto.org.br/">Site parceira</a></li>
-                    </ul>
-        </ul>
-                </nav>
-                <div>
-<form>
-    <fieldset>
+    <!-- Formulário para a doação -->
+    <form>
+        <!-- Primeiro fieldset com informações pessoais -->
+        <fieldset>
             <legend>Nós diga um pouco sobre você:</legend>
-        <p><label for="idTexto">Nome:</label><input type="text" name="nTexto" id="idTexto" size="40" placeholder="Nome Completo"></p>
+            <p><label for="idTexto">Nome:</label><input type="text" name="nTexto" id="idTexto" size="40" placeholder="Nome Completo"></p>
             <p><label for="idEmail">Email:</label><input type="email" name="nEmail" id="idEmail" placeholder="exemplo01@gmail.com"></p>
             <p><label for="idData">Data de Nascimento:</label><input type="date" name="nData" id="idData"></p>
             <p><label for="idSenha">Senha:</label><input type="password" name="nSenha" id="idSenha"></p>
-    </fieldset>
-    <fieldset>
-        <legend>Venha fazer alguém feliz</legend>
-        <label for="id1">Escolha forma de pagamento</label><br><input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 1" id="id1"><label
-            for="id1">Pix</label>
-        <input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 2" id="id2"><label for="id2">Boleto</label>
-        <input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 3" id="id3"><label for="id3">Cartão</label>
-        <br>
+        </fieldset>
+
+        <!-- Segundo fieldset com informações de pagamento -->
         <fieldset>
-            <legend></legend>
-            <p><label for="idSenha">Chave do Pix:</label><input type="password" name="nSenha" id="idSenha"></p>
-    </fieldset>
-        <br>
-        <label for="idNum">Quantia</label><br><input type="number" name="nNum" id="idNum" min="0" max="100000">
-        <br>
-        <br>
-        <label for="idSelecao">Escolha o impacto da sua doação, mas saiba: cadastrando uma doação mensal você torna seu impacto ainda maior!</label><br>
-        <select name="nSelecao" id="idSelecao">
-            <option value="Coisa 1">anual</option>
-            <option value="Coisa 2">Mensal</option>
-            <option value="Coisa 3">semanal</option>
-            <option value="Coisa 4">Única</option>
-        </select>
-        <br>
-        <br>    
-        <br>
-        <br>
-        <label for="idCaixa">Deixe sua opnião:</label><br><textarea type="text" cols="50" rows="10" placeholder="Digite aqui alguma coisa" name="nCaixa" id="idCaixa"></textarea><br>
-        <button onclick="alert('Obrigado por contribuir com o projeto!')">Concluir</button>
-    </fieldset>
-</form>
-</div>
+            <legend>Venha fazer alguém feliz</legend>
+            <label for="id1">Escolha forma de pagamento</label><br>
+            <input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 1" id="id1">
+            <label for="id1">Pix</label>
+            <input type="radio" name="IgualParaTodosOs RadioDeUmaMesmaEntrada" value="Opção 2" id="id2">
+            <label for="id2">Boleto</label>
+            <input type="radio" name="IgualParaTodosOs RadioDeUmaMesma Entrada" value="Opção 3" id="id3">
+            <label for="id3">Cartão</label>
+            <br>
+
+            <!-- Sub-fieldset para inserir chave do Pix -->
+            <fieldset>
+                <legend></legend>
+                <p><label for="idSenha">Chave do Pix:</label><input type="password" name="nSenha" id="idSenha"></p>
+            </fieldset>
+
+            <br>
+            <label for="idNum">Quantia</label><br>
+            <input type="number" name="nNum" id="idNum" min="0" max="100000">
+            <br>
+            <br>
+            <label for="idSelecao">Escolha o impacto da sua doação, mas saiba: cadastrando uma doação mensal você torna seu impacto ainda maior!</label><br>
+            <select name="nSelecao" id="idSelecao">
+                <option value="Coisa 1">anual</option>
+                <option value="Coisa 2">Mensal</option>
+                <option value="Coisa 3">semanal</option>
+                <option value="Coisa 4">Única</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label for="idCaixa">Deixe sua opnião:</label><br>
+            <textarea type="text" cols="50" rows="10" placeholder="Digite aqui alguma coisa" name="nCaixa" id="idCaixa"></textarea><br>
+            <button onclick="alert('Obrigado por contribuir com o projeto!')">Concluir</button>
+        </fieldset>
+    </form>
 </body>
 </html>
